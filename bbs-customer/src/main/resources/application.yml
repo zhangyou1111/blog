@@ -1,0 +1,22 @@
+# 端口
+server:
+  port: 18080  servlet:    context-path: /bbs
+  
+## Dubbo
+dubbo:
+  application:
+    name: dubbo-consumer
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  scan:
+    base-packages: com.company
+#springmvc.配置
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+    pathmatch:
+      use-suffix-pattern: false
+      use-registered-suffix-pattern: true
+ 
